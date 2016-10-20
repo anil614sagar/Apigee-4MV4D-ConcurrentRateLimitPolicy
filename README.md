@@ -1,6 +1,6 @@
 # Apigee-4MV4D-ConcurrentRateLimitPolicy
 
-This is an example proxy that illustrates how to use Apigee Edge to throttle number of concurrent connection to your API traget server using ConcurrentRateLimitPolicy.
+This is an example proxy that illustrates how to use Apigee Edge to throttle number of concurrent connection to your API target server using ConcurrentRateLimitPolicy.
 
 ## Example
 
