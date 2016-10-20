@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConcurrentRatelimit async="false" continueOnError="false" enabled="true" name="Concurrent-Rate-Limit-1">
+    <DisplayName>Concurrent Rate Limit-1</DisplayName>
+    <AllowConnections count="2" ttl="20"/>
+    <Distributed>true</Distributed>
+    <StrictOnTtl>true</StrictOnTtl>
+    <TargetIdentifier name=""/>
+</ConcurrentRatelimit>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="concurrentDemo">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1476941022584</CreatedAt>
+    <CreatedBy>asagar@apigee.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>concurrentDemo</DisplayName>
+    <LastModifiedAt>1476941104438</LastModifiedAt>
+    <LastModifiedBy>asagar@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>Concurrent-Rate-Limit-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>node://hello-world.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

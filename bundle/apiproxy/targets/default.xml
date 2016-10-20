@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Concurrent-Rate-Limit-1</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response>
+            <Step>
+                <Name>Concurrent-Rate-Limit-1</Name>
+            </Step>
+        </Response>
+    </PostFlow>
+    <Flows/>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://api.usergrid.com</URL>
+    </HTTPTargetConnection>
+    <ScriptTarget>
+        <ResourceURL>node://hello-world.js</ResourceURL>
+    </ScriptTarget>
+    <DefaultFaultRule name="DefaultFaultRule">
+        <AlwaysEnforce>true</AlwaysEnforce>
+        <Step>
+            <Name>Concurrent-Rate-Limit-1</Name>
+        </Step>
+    </DefaultFaultRule>
+</TargetEndpoint>
